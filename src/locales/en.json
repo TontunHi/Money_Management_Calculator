@@ -1,0 +1,23 @@
+{
+  "translation": {
+    "app_title": "Money Management",
+    "account_section": "Account & Risk",
+    "trade_section": "Trade Setup (XAUUSD)",
+    "account_type": "Account Type",
+    "balance": "Balance",
+    "risk": "Risk",
+    "commission": "Commission ($/Lot)",
+    "entry": "Entry Price",
+    "stop_loss": "Stop Loss",
+    "take_profit": "Take Profit (Optional)",
+    "reset_btn": "Reset Form",
+    "empty_state": "Please enter Balance, Entry, and Stop Loss to calculate.",
+    "lot_size": "Recommended Lot Size",
+    "risk_label": "Risk",
+    "reward_label": "Potential Reward",
+    "rr_label": "R:R Ratio",
+    "be_label": "Break Even",
+    "buy": "BUY / LONG",
+    "sell": "SELL / SHORT"
+  }
+}
