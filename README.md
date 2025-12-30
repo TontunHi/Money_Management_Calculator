@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# 💰 Money Management Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional **Position Size Calculator** web application designed for traders (specifically XAUUSD/Gold). Built with a focus on **Minimalist Design**, **Production-Ready Architecture**, and **Real-world Usage**.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🎯 Precision Calculation:** Calculate Lot size based on Risk %, Balance, and Stop Loss.
+- **🌗 Dark & Light Mode:** Fully supported themes with persistence (saves user preference).
+- **🌐 Multi-Language:** Support **English** and **Thai (ภาษาไทย)** via i18n.
+- **📱 Mobile-First:** Responsive design that works perfectly on all devices.
+- **🛡️ Risk Management:** Visual indicators for Risk/Reward Ratio, Break Even Point, and Spread Cost.
+- **🏛️ MVC Architecture:** Clean code structure separating Logic (Model), State (Controller), and UI (View).
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Core:** React 18, TypeScript, Vite
+- **Styling:** Tailwind CSS, Lucide React (Icons)
+- **State/Logic:** Custom Hooks, React Context
+- **Internationalization:** i18next
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Project Structure (MVC)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+We follow a clean separation of concerns pattern:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+src/
+├── components/     # Reusable UI (Buttons, Inputs)
+├── controllers/    # Business Logic & State Management (Hooks)
+├── models/         # TypeScript Interfaces & Types
+├── views/          # Page Layouts & Screens
+├── utils/          # Pure Functions (Calculations, Formatting)
+└── contexts/       # Global State (Theme)
