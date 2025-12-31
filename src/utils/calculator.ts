@@ -10,8 +10,7 @@ export const calculatePositionSize = (input: TradeInput): CalculationResult => {
     stopLoss, 
     takeProfit, 
     commission,
-    spread,
-    accountType 
+    spread
   } = input;
 
   // ... (Code ส่วน Validate เดิม คงไว้เหมือนเดิม) ...
